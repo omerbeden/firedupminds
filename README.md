@@ -1,0 +1,2 @@
+# firedupminds
+daily motivational phrases
