@@ -1,0 +1,105 @@
+body,
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #282c34;
+  color: #fff;
+  height: 100%;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  position: relative;
+}
+
+#image-container {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#page-image {
+  width: 100%;
+  height: 100%;
+  filter: brightness(1.2) contrast(1.2);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+#image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  background: rgba(0, 51, 102, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 20px;
+}
+
+#highlighted-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f1c40f;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #highlighted-text {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  #highlighted-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #highlighted-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #highlighted-text {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #highlighted-text {
+    font-size: 2.5rem;
+  }
+}
+
+.twitter-share-button {
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  #image-container {
+    width: 1024px;
+    height: 512px;
+  }
+}
