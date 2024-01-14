@@ -72,7 +72,7 @@
 
   <script src="redirect.js"></script>
   <script>
-    var randomNumber = generateRandomNumber(7);
+    var randomNumber = generateRandomNumber(18);
     var newImageURL = `images/${randomNumber}.jpg`;
 
     var dynamicImageElement = document.getElementById("dynamicTwitterImage");
