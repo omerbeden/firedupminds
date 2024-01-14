@@ -14,16 +14,13 @@
 </head>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-74K77HXXV7"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWHQK9046Q"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-74K77HXXV7');
+  gtag('config', 'G-MWHQK9046Q');
 </script>
 
 <body>
