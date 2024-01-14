@@ -29,25 +29,25 @@
 <body>
   <?php
 
-  if (file_exists('path/to/config.php')) {
-    require_once 'path/to/config.php';
-  } else {
-    defined('DB_SERVER')   || define('DB_SERVER', getenv('DB_SERVER') ?: 'default_server');
-    defined('DB_USERNAME') || define('DB_USERNAME', getenv('DB_USERNAME') ?: 'default_username');
-    defined('DB_PASSWORD') || define('DB_PASSWORD', getenv('DB_PASSWORD') ?: 'default_password');
-    defined('DB_DATABASE') || define('DB_DATABASE', getenv('DB_DATABASE') ?: 'default_database');
-  }
+  define('DB_SERVER', 'defaulthost');
+  define('DB_USERNAME', 'defaultuser');
+  define('DB_PASSWORD', 'defaultpassword');
+  define('DB_DATABASE', 'defaultdb');
+
   $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 
   if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: ");
   }
 
-  $randomNumber = rand(1, 86, 489);
+  $randomNumber = rand(1, 86489);
 
-  $sql = "SELECT * FROM quotes WHERE id = $randomNumber";
+  $sql = "SELECT * FROM `quotes` WHERE id = $randomNumber";
   $result = $conn->query($sql);
 
+  if (!$conn->query($sql)) {
+    printf("Error message: %s\n", $mysqli->error);
+  }
   if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $quote = $row["quote"];
@@ -63,6 +63,9 @@
       <div id="image-overlay">
         <p id="highlighted-text">
           <?php echo $quote; ?>
+        </p>
+        <p id="author-name">
+          <?php echo $author; ?>
         </p>
       </div>
     </div>

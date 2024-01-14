@@ -44,7 +44,6 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 5px;
   background: rgba(0, 51, 102, 0.65);
   display: flex;
   justify-content: center;
@@ -62,6 +61,13 @@ html {
   padding: 10px;
   text-align: center;
 }
+
+#author-name {
+  font-size: 18px; 
+  color: #333; 
+  margin-top: 10px; 
+}
+
 @media (max-width: 767px) {
   #highlighted-text {
     font-size: 1rem; 
