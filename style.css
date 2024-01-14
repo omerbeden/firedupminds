@@ -35,9 +35,17 @@ html {
   height: 100%;
   filter: brightness(1.2) contrast(1.2);
   transition: transform 0.3s ease-in-out;
-
+  animation: pulse 4s  ease-in-out;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 #image-overlay {
   position: absolute;
   top: 0;
