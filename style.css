@@ -54,6 +54,7 @@ html {
   bottom: 0;
   background: rgba(0, 51, 102, 0.65);
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -72,7 +73,7 @@ html {
 
 #author-name {
   font-size: 18px; 
-  color: #333; 
+  color: #d3d3d3;
   margin-top: 10px; 
 }
 
