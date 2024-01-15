@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Daily Motivation" />
-  <meta name="twitter:image" id="dynamicTwitterImage" content="images/placeholder.jpg" />
+  <meta name="twitter:image" id="dynamicTwitterImage" content="images/placeholder.jpg" /> -->
 
   <title>Motivational Quotes</title>
   <link rel="stylesheet" href="style.css" />
@@ -66,8 +66,8 @@
         </p>
       </div>
     </div>
-    <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" data-url="https://firedupminds.com/">
-      Post</a>
+    <!-- <a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" data-url="https://firedupminds.com/">
+      Post</a> -->
   </div>
 
   <script src="redirect.js"></script>
@@ -81,23 +81,23 @@
     dynamicImageElement.setAttribute("content", newImageURL);
     pageImage.setAttribute("src", newImageURL);
 
-    window.twttr = (function(d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
+    // window.twttr = (function(d, s, id) {
+    //   var js,
+    //     fjs = d.getElementsByTagName(s)[0],
+    //     t = window.twttr || {};
+    //   if (d.getElementById(id)) return t;
+    //   js = d.createElement(s);
+    //   js.id = id;
+    //   js.src = "https://platform.twitter.com/widgets.js";
+    //   fjs.parentNode.insertBefore(js, fjs);
 
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
+    //   t._e = [];
+    //   t.ready = function(f) {
+    //     t._e.push(f);
+    //   };
 
-      return t;
-    })(document, "script", "twitter-wjs");
+    //   return t;
+    // })(document, "script", "twitter-wjs");
   </script>
 </body>
 
