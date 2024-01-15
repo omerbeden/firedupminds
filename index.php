@@ -75,10 +75,10 @@
     var randomNumber = generateRandomNumber(27);
     var newImageURL = `images/${randomNumber}.jpg`;
 
-    var dynamicImageElement = document.getElementById("dynamicTwitterImage");
+    //var dynamicImageElement = document.getElementById("dynamicTwitterImage");
     var pageImage = document.getElementById("page-image");
 
-    dynamicImageElement.setAttribute("content", newImageURL);
+    //dynamicImageElement.setAttribute("content", newImageURL);
     pageImage.setAttribute("src", newImageURL);
 
     // window.twttr = (function(d, s, id) {
