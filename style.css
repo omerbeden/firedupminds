@@ -38,9 +38,6 @@ html {
   transition: transform 0.3s ease-in-out;
   animation: pulse 4s  ease-in-out;
 }
-#page-image:hover{
-  animation: pulse 4s  ease-in-out;
-}
 
 @keyframes pulse {
   0%, 100% {
