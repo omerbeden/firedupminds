@@ -37,7 +37,7 @@
     die("Connection failed: ");
   }
 
-  $randomNumber = rand(1, 86489);
+  $randomNumber = rand(1, 86488);
 
   $sql = "SELECT * FROM `quotes` WHERE id = $randomNumber";
   $result = $conn->query($sql);
