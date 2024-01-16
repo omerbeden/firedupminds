@@ -116,6 +116,6 @@ html {
 @media (min-width: 1024px) {
   #image-container {
     width: 1024px;
-    height: 512px;
+    height: 768px;
   }
 }
